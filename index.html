@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Race</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Typing Race</h1>
+        <div id="text-display"></div>
+        <textarea id="text-input" placeholder="Start typing here..."></textarea>
+        <div id="wpm-display">WPM: 0</div>
+        <button id="restart-same">Restart Same Text</button>
+        <button id="restart-new">Restart New Text</button>
+        <div class="text-length-selector">
+            <label for="text-length">Text Length:</label>
+            <select id="text-length">
+                <option value="5">5 words</option>
+                <option value="10">10 words</option>
+                <option value="50" selected>50 words</option>
+                <option value="100">100 words</option>
+            </select>
+        </div>
+    </div>
+    <script src="textGenerator.js"></script>
+    <script src="wpmCalculator.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
